@@ -1,0 +1,1380 @@
+[
+  {
+    "dialog_id": "1_1",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chào admin, em muốn hỏi về ngành Tự động hoá của trường mình. Liệu em có thể xét tuyển bằng học bạ không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, trường không xét tuyển bằng học bạ cho ngành Tự động hoá nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 1
+  },
+  {
+    "dialog_id": "1_2",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Vậy trường có nhận thư giới thiệu như bên BK không ạ? Em có 1 giải ba tỉnh HSG Lý lớp 10, 1 giải nhì lớp 11 và 1 giải nhì lớp 12, đều là môn Lý, em đang học chuyên Thái Nguyên ạ."
+      },
+      {
+        "role": "assistant",
+        "content": "Với thành tích giải Ba HSG Lý cấp tỉnh lớp 10, giải Nhì Lý lớp 11 và giải Nhì Lý lớp 12, bạn hoàn toàn có thể xét tuyển theo phương thức ưu tiên xét tuyển nhé. Điều kiện là bạn cần có điểm trung bình học tập THPT từ 8.5 trở lên, học lực Giỏi và hạnh kiểm Tốt trong cả 3 năm học. Sau đó, điểm thi THPT của bạn cần vượt qua điểm sàn của trường. Cuối cùng, nhà trường sẽ xét các giải thưởng của bạn theo thứ tự ưu tiên từ cao xuống thấp cho đến khi đủ chỉ tiêu."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "1",
+    "original_dialog_id": 1
+  },
+  {
+    "dialog_id": "1_3",
+    "topic": "Thông tin tuyển sinh khác",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Trường mình lệ phí xét tuyển nộp thế nào ạ? Em đăng ký xong rồi nhưng chưa thấy phần nộp tiền."
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, hiện tại trường chưa đến thời gian mở cổng đăng ký xét tuyển nên bạn chưa thấy phần nộp lệ phí là bình thường nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "0",
+    "original_dialog_id": 1
+  },
+  {
+    "dialog_id": "2_1",
+    "topic": "Chương trình học",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Cho e hỏi là những ngành học mới nào của trường phải chuyển đi nơi khác trong 2 năm đầu vậy ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Thông tin về các ngành học mới phải chuyển đi nơi khác trong 2 năm đầu chưa được cung cấp cụ thể. Bạn vui lòng theo dõi các thông báo chính thức từ nhà trường để cập nhật thông tin mới nhất nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "0",
+    "original_dialog_id": 2
+  },
+  {
+    "dialog_id": "2_2",
+    "topic": "XT THPT QG",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ad ơi khi vô trường nếu đủ điểm đậu thì cần tiêu chí gì nữa k ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Nếu bạn xét tuyển bằng điểm thi THPTQG và đã đủ điểm đậu thì không cần thêm tiêu chí nào khác nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 2
+  },
+  {
+    "dialog_id": "2_3",
+    "topic": "Thông tin tuyển sinh khác",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Cho e xin mã trường với ạ. Với mã ngành ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Mã trường là QHI. Mã ngành sẽ tùy thuộc vào ngành học bạn muốn xét tuyển, bạn có thể tham khảo danh sách mã ngành trên cổng thông tin tuyển sinh của trường."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "1",
+    "original_dialog_id": 2
+  },
+  {
+    "dialog_id": "2_4",
+    "topic": "XT THPT QG",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Trường mình đầu vào thi ntnao vậy ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, trường không tổ chức kiểm tra tiếng Anh đầu vào nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "0",
+    "original_dialog_id": 2
+  },
+  {
+    "dialog_id": "2_5",
+    "topic": "Thông tin nhập học",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Trường mình bao giờ nhập học ạ. Hôm 24 tháng 8 là tất cả nhập học ạ. Và nhập học cần những giấy tờ gì ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào em, thời gian nhập học cụ thể sẽ được nhà trường thông báo trong thời gian sắp tới. Em vui lòng tham khảo hướng dẫn xác nhận nhập học và nhập học đại học chính quy năm 2024 tại đường dẫn sau: https://tuyensinh.uet.vnu.edu.vn/tin-tuyen-sinh/huong-dan-xac-nhan-nhap-hoc-va-nhap-hoc-dai-hoc-chinh-quy-nam-2024/"
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Khi nào",
+    "reasoning_level": "1",
+    "original_dialog_id": 2
+  },
+  {
+    "dialog_id": "2_6",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Cho e hỏi là e ở tỉnh lẻ giờ muốn có giấy chuyển nvqs ấy thì cần giấy báo trúng tuyển. Trường có gửi mail giấy trúng tuyển k ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Về việc cấp giấy báo trúng tuyển để làm giấy chuyển NVQS, bạn vui lòng liên hệ trực tiếp phòng đào tạo hoặc bộ phận hành chính của trường để được hỗ trợ và hướng dẫn cụ thể về quy trình gửi giấy tờ qua email hoặc nhận trực tiếp nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "1",
+    "original_dialog_id": 2
+  },
+  {
+    "dialog_id": "3_1",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "em định dùng các phương thức xét tuyển thẳng, utxt của trường thì chỉ cần điền thông tin như này thôi phải không ạ ?. . em đăng kí nhiều nguyện vọng nhưng vẫn chỉ cần nộp 30k thôi vì chỉ dùng 1 phương thức là \"đối tượng 1,2,3,4\" phải không ạ ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, đúng rồi bạn nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "0",
+    "original_dialog_id": 3
+  },
+  {
+    "dialog_id": "3_2",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "ad ơi cho e hỏi thông tin này là sao ạ ?. em tưởng hạn cuối đăng kí xét tuyển vào uet là 10/6 rồi ạ. à đấy là uet. em đã hoàn thành đki nguyện vọng trên trang đăng kí của uet thì có cần làm gì với vnu nữa không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, đây là lịch chung của các trường trong khối VNU, bạn đăng ký hồ sơ trên web của nhà trường là được rồi nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "1",
+    "original_dialog_id": 3
+  },
+  {
+    "dialog_id": "3_3",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "à cho em hỏi thêm với ạ, trong quy chế tuyển sinh, em thấy có tuyển thẳng bằng giải của ĐhqgHN, thì em nghĩ giải olympic khtn cũng xét được chứ ạ ? Tại em thấy trong một số nhóm chat mn bảo bỏ giải olp khtn rồi ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Bạn cứ xét nhé, nhà trường đang cân nhắc về giải Olympic của chuyên KHTN."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "1",
+    "original_dialog_id": 3
+  },
+  {
+    "dialog_id": "4_1",
+    "topic": "Thông tin tuyển sinh khác",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ở uet có lấy toeic làm chứng chỉ đầu ra ko ạaa"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, trường không áp dụng chứng chỉ TOEIC làm điều kiện đầu ra."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 4
+  },
+  {
+    "dialog_id": "4_2",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Cho em hỏi là. . Mình nộp học bạ thpt bản chính. Hoặc bản sao có công chứng cũng đc đúng ko ạa"
+      },
+      {
+        "role": "assistant",
+        "content": "Bạn có thể nộp bản sao công chứng học bạ để hoàn thiện hồ sơ."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 4
+  },
+  {
+    "dialog_id": "4_3",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ad ơi. Cho em hỏi. Phải có giấy báo nhập học thì em mới xin chuyển nghĩa vụ quân sự đc. Nhưng 24/8 thì phải lên trường nhập học. Lúc ấy em mới lấy đc giấy báo nhập họcc. Thì em lại chưa xin đc giấy chuyển nghĩa vụ quân sự. Thì em phải làm thế nào đâyy ạa"
+      },
+      {
+        "role": "assistant",
+        "content": "Bạn cứ lên trường nhập học và nhận giấy trúng tuyển trước. Giấy chuyển nghĩa vụ quân sự bạn có thể bổ sung sau. Bạn có thể nộp hồ sơ còn thiếu tại Phòng CTSV (P104-E3) trước ngày 10/09/2024 trong giờ hành chính. Ngoài ra, bạn có thể nhận trước giấy báo trúng tuyển từ ngày 19 - 23/8 tại trường nhé!"
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "1",
+    "original_dialog_id": 4
+  },
+  {
+    "dialog_id": "5_1",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Khi nào thí sinh tuyển thẳng nộp hồ sơ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Hiện tại chưa có mốc thời gian cụ thể bạn nhé. Bạn vui lòng chờ thông tin chính thức từ đề án tuyển sinh của trường để cập nhật thời gian nộp hồ sơ tuyển thẳng."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Khi nào",
+    "reasoning_level": "0",
+    "original_dialog_id": 5
+  },
+  {
+    "dialog_id": "6_1",
+    "topic": "Thông tin tuyển sinh khác",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Cho em hỏi liệu năm nay 2k6 còn được học bổng này không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào em, hiện tại nhà trường chưa có thông tin chính thức về các loại học bổng dành cho sinh viên nhập học năm nay, bao gồm cả học bổng mà em đang đề cập. Em vui lòng theo dõi các kênh thông tin chính thức của trường để cập nhật những thông báo mới nhất về học bổng nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": true,
+    "question_type": "Có/Không",
+    "reasoning_level": "1",
+    "original_dialog_id": 6
+  },
+  {
+    "dialog_id": "7_1",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Nếu tra cứu không đúng tức là trượt đúng ko ạ? Em tra rồi em cũng check mail thì nó ghi cccd không đúng ạ."
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, việc tra cứu không đúng thông tin CCCD không đồng nghĩa với việc bạn trượt bạn nhé. Để chắc chắn, bạn vui lòng kiểm tra lại xem mình đã ấn nút nộp hồ sơ chưa, vì có thể hệ thống chưa ghi nhận hồ sơ của bạn."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": true,
+    "question_type": "Có/Không",
+    "reasoning_level": "1",
+    "original_dialog_id": 7
+  },
+  {
+    "dialog_id": "8_1",
+    "topic": "Không liên quan",
+    "messages": [],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "0",
+    "original_dialog_id": 8
+  },
+  {
+    "dialog_id": "9_1",
+    "topic": "XT THPT QG",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Mình cần hỏi bên tuyển sinh khối d01 m vào nghành công nghệ ạ. Mình thấy bên b tuyển điểm của năm 2023 khối d01 thi toán văn anh mà thấy ghi thang điểm là 30 mình chưa hiểu ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Khối D1, môn Toán và Tiếng Anh hệ số 2 bạn nhé. Công thức tính điểm xét tuyển Đại học (ĐX) sẽ là: ĐX = (Toán x 2 + Anh x 2 + Môn3) x 3/5 + Điểm ƯT (ĐT, KV)."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "0",
+    "original_dialog_id": 9
+  },
+  {
+    "dialog_id": "9_2",
+    "topic": "XT THPT QG",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Vậy toán ,anh hệ số 2 đạt thang 30 là đỗ ạ. Mình k có điểm uu tiên ,kv ạ. Thì xét như nư.2023 là chốt bn điểm ạ m chưa hiểu"
+      },
+      {
+        "role": "assistant",
+        "content": "Bạn tính điểm theo công thức đã cung cấp, nếu điểm của bạn bằng hoặc cao hơn điểm chuẩn của ngành thì sẽ đỗ nhé. Vì bạn không có điểm ưu tiên hay khu vực nên sẽ xét điểm thi THPT của bạn với điểm chuẩn."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Bao nhiêu",
+    "reasoning_level": "1",
+    "original_dialog_id": 9
+  },
+  {
+    "dialog_id": "9_3",
+    "topic": "XT THPT QG",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ad cho em hỏi í dụ e dki thi ngành cntt nhưng điểm e ko đạt đủ 27 mà chỉ 25 đủ vào kĩ thuật robot mà e chuyển sang kt robot có dc ko ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, nếu bạn đăng ký nguyện vọng vào ngành CNTT nhưng điểm thi của bạn chỉ đủ để trúng tuyển ngành Kỹ thuật Robot, thì bạn sẽ được học ngành Kỹ thuật Robot. Với phương thức xét điểm thi THPT, bạn có thể đặt không giới hạn số nguyện vọng nên hãy cứ yên tâm đăng ký các ngành mình mong muốn."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "1",
+    "original_dialog_id": 9
+  },
+  {
+    "dialog_id": "9_4",
+    "topic": "XT THPT QG",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Vậy là e cứ dki còn điểm e có thể đạt dc ngành nào tỏng trg m là e vào dc đúng ko ạ?. Vậy e có phải đăng kí nghành và trường mình trc ko ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Đúng vậy, bạn cứ đăng ký các nguyện vọng theo thứ tự ưu tiên mong muốn trên cổng xét tuyển của Bộ Giáo dục và Đào tạo. Hệ thống sẽ xét tuyển bạn vào ngành mà bạn đủ điểm trúng tuyển dựa trên thứ tự các nguyện vọng bạn đã đăng ký."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "2",
+    "original_dialog_id": 9
+  },
+  {
+    "dialog_id": "9_5",
+    "topic": "XT THPT QG",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Dạ vâng bây h e đặt dc trước các nguyện vọng trên cổng chưa ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Đối với phương thức xét tuyển bằng điểm thi THPT Quốc gia, bạn sẽ thực hiện đăng ký nguyện vọng sau khi có kết quả thi và theo lịch trình cụ thể do Bộ Giáo dục và Đào tạo công bố nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Khi nào",
+    "reasoning_level": "0",
+    "original_dialog_id": 9
+  },
+  {
+    "dialog_id": "10_1",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "cho em hỏi là phương thức tuyển sinh 2024 có chưa ạ. nếu có xét học bạ thì có đăng kí online được ko ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Hiện tại đã có đề án tuyển sinh năm 2024, tuy nhiên nhà trường không sử dụng phương thức xét học bạ để xét tuyển ạ."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "1",
+    "original_dialog_id": 10
+  },
+  {
+    "dialog_id": "10_2",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "em thấy có xét học sinh hệ chuyên ý ạ liệu năm nay có còn ko ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Hiện tại chưa có đề án tuyển sinh chính thức nên chưa thể khẳng định chắc chắn liệu phương thức xét học sinh hệ chuyên có còn hay không. Tuy nhiên, các phương thức tuyển sinh cơ bản dự kiến sẽ ổn định như năm trước."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": true,
+    "question_type": "Có/Không",
+    "reasoning_level": "1",
+    "original_dialog_id": 10
+  },
+  {
+    "dialog_id": "11_1",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Cho xin công thức quy đổi điểm ĐGNL và hỏi xét bằng phương thức ĐGNL có được cộng điểm thưởng và điểm ưu tiên khu vực không ạ? Nếu được giải khuyến khích môn Toán tỉnh năm 2023 có được tính vào điểm thưởng không?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, công thức quy đổi điểm ĐGNL (HSA) của ĐHQGHN là: ĐX = (Tư duy định lượng x 2 + Tư duy định tính + Điểm Khoa học) * 30/200 + điểm ƯT (ĐT, KV).\n\nKhi xét tuyển bằng phương thức ĐGNL, bạn sẽ được cộng điểm ưu tiên về khu vực.\n\nTuy nhiên, trường không cộng điểm thưởng cho các giải học sinh giỏi, bao gồm cả giải khuyến khích môn Toán tỉnh năm 2023, vào điểm xét ĐGNL nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "2",
+    "original_dialog_id": 11
+  },
+  {
+    "dialog_id": "12_1",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ad ơi, em có Huy chương Đồng kì thi Olympic chuyên KHTN do ĐHKHTN tổ chức, thành tích này có dc tính là đối tượng 2 của xét tuyển thẳng ko ạ? Thành tích này + hs chuyên có đủ đạt đối tượng 2 ko ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, giải Olympic chuyên KHTN không thuộc danh mục các giải được xét tuyển thẳng bạn nhé, và thành tích này cùng với học sinh chuyên cũng không đủ để đạt đối tượng 2 của xét tuyển thẳng."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 12
+  },
+  {
+    "dialog_id": "12_2",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ad ơi, 6.5 IELTS đc quy đổi bằng bao nhiêu điểm TA thế ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, 6.5 IELTS sẽ được quy đổi tương đương 9.5 điểm môn tiếng Anh bạn nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Bao nhiêu",
+    "reasoning_level": "0",
+    "original_dialog_id": 12
+  },
+  {
+    "dialog_id": "12_3",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ad ơi, trường mình đã cập nhật nguyện vọng cho các thí sinh trúng tuyển sớm chưa ạ? Em trúng theo đối tượng 4, có giải tỉnh ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, nhà trường sẽ sớm cập nhật nguyện vọng cho các thí sinh trúng tuyển sớm, bao gồm cả bạn trúng tuyển theo đối tượng 4 có giải tỉnh nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Khi nào",
+    "reasoning_level": "0",
+    "original_dialog_id": 12
+  },
+  {
+    "dialog_id": "12_4",
+    "topic": "Thông tin tuyển sinh khác",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ad ơi, sao em thấy trường mình chưa cập nhật nguyện vọng cho thí sinh tuyển thẳng nhưng lại có cập nhật cho điểm ĐGNL rồi ạ? Với ngành này trường đã đưa ra mức điểm sàn là 8,5 rồi đúng ko ạ hay đây mới chỉ là điều kiện xét thôi ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, \"trúng tuyển có điều kiện\" thực chất là bạn còn phải vượt qua điều kiện điểm sàn nữa mới chính thức trúng tuyển, nên việc chưa có trên cổng Bộ là bình thường. Điểm sàn là điểm đảm bảo chất lượng đầu vào bằng điểm thi THPTQG, còn mức 8.5 bạn đề cập có thể là điều kiện xét tuyển ban đầu, không phải điểm sàn chính thức. Năm ngoái, điểm sàn cho ngành CN12 là 22 điểm."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Tại sao",
+    "reasoning_level": "1",
+    "original_dialog_id": 12
+  },
+  {
+    "dialog_id": "12_5",
+    "topic": "XT THPT QG",
+    "messages": [
+      {
+        "role": "user",
+        "content": "22đ là của khối A hay A1 ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, 22 điểm là điểm sàn xét tuyển cho các khối A00, A01 và D01 bạn nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "0",
+    "original_dialog_id": 12
+  },
+  {
+    "dialog_id": "12_6",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Em xét khối A1, điểm TA có đc quy đổi theo chứng chỉ IELTS ko ạ? Em đã đăng kí trên web của bộ và nạp khi đăng kí xét tuyển sớm của trường rồi ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, nếu bạn đã đăng ký chứng chỉ IELTS trên web của Bộ và cả trên web của trường khi đăng ký xét tuyển sớm, thì điểm tiếng Anh của bạn sẽ được quy đổi theo chứng chỉ IELTS bạn nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 12
+  },
+  {
+    "dialog_id": "12_7",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ad cho em hỏi thêm, giả dụ nếu em có điểm thi đh khả quan và muốn đki một ngành khác là nv1 (chẳng hạn CN8) rồi sau đó em đặt CN12 có đc ko ah?"
+      },
+      {
+        "role": "assistant",
+        "content": "Được bạn nhé. Bạn hoàn toàn có thể đặt ngành CN12 là nguyện vọng sau nếu đã đặt ngành CN8 là nguyện vọng 1 và có điểm thi đại học khả quan."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 12
+  },
+  {
+    "dialog_id": "12_8",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ad ơi, khi nào trường sẽ công bố điểm sàn của đối tượng 4 vậy ạ? Ad ơi, trường đã có điểm sàn của khoa CN12 chưa ạ? Có điểm sàn thì trường có cập nhật nguyện vọng trên cổng đki của Bộ luôn ko ah?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, hiện tại trường đang rà soát điểm của các bạn thí sinh thuộc đối tượng 4 và các thí sinh xét tuyển thẳng. Điểm sàn sẽ được công bố sớm nhất có thể, dự kiến trong vòng 2-3 ngày tới. Khi có điểm sàn, trường sẽ cập nhật nguyện vọng trên cổng đăng ký của Bộ bạn nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Khi nào",
+    "reasoning_level": "1",
+    "original_dialog_id": 12
+  },
+  {
+    "dialog_id": "12_9",
+    "topic": "Thông tin nhập học",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ad cho em hỏi ạ, em đã nhập đúng mã sinh viên và mk là ngày tháng năm sinh nhưng sao ko đăng nhập dc ạ?."
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, hiện tại hệ thống chưa cho phép đăng nhập. Bạn vui lòng đợi một thời gian nữa nhé!"
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Tại sao",
+    "reasoning_level": "0",
+    "original_dialog_id": 12
+  },
+  {
+    "dialog_id": "13_1",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chào trường mình ạ, liệu ngành CN9 năm nay sẽ biến động điểm chuẩn mạnh không ạ? Điểm năm nay liệu có dao động nhiều không ạ? Tăng hay giảm ạ? Và 26.18 điểm năm nay liệu có nổi CN9 không ạ :("
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, điểm chuẩn có nhiều yếu tố tác động nên admin không thể dự đoán được, tuy nhiên CN9 tăng chỉ tiêu so với năm ngoái nên với mức điểm 26.18 của bạn có cơ hội cao, bạn cứ tự tin đăng ký nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Bao nhiêu",
+    "reasoning_level": "1",
+    "original_dialog_id": 13
+  },
+  {
+    "dialog_id": "13_2",
+    "topic": "XT kết hợp",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Em thấy điểm quy đổi chứng chỉ của em thấp hơn thi THPTQG thì em có thể dùng điểm THPTQG không ạ? Môn Anh ạ. Cách tính điểm của trường mình như thế nào ạ. Cho em xin bảng quy đổi điểm chứng chỉ với ạ. Này hình như ko phải bảng quy đổi em mong muốn ạ. Có gì cứu vãn đc em không ạ, em quên đặt nguyện vọng lúc xét kết hợp IELTS r ạ. Mấy đứa bạn bảo em là có HSA mới đc xét tuyển sớm. Em ko ngờ có cả IELTS+ 2 điểm Toán Lý. :("
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, trường sẽ lấy điểm cao hơn trong 2 điểm (điểm THPTQG hoặc điểm quy đổi chứng chỉ) để xét tuyển cho bạn nhé. Hiện tại phương thức xét tuyển sớm đã hết rồi bạn ạ. Nếu bạn nộp minh chứng IELTS lên cổng của Bộ thì khi xét điểm THPTQG, nhà trường vẫn quy đổi cho bạn sang điểm tiếng Anh để xét. Về bảng quy đổi điểm chứng chỉ, admin xin phép gửi lại bạn."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "2",
+    "original_dialog_id": 13
+  },
+  {
+    "dialog_id": "13_3",
+    "topic": "Thông tin tuyển sinh khác",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Trường mình có học bổng khuyến khích học tập không ạ. Trường mình có thư viện không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, trường có thư viện và có học bổng khuyến khích học tập theo kỳ nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 13
+  },
+  {
+    "dialog_id": "14_1",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Cho mình hỏi là trường mình có đề án tuyển sinh chưa ạ, và nếu như xét tuyển bằng giải quốc gia thì phải nộp hồ sơ gồm những gì với ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, hiện tại trường chưa công bố đề án tuyển sinh nhé. Về hồ sơ xét tuyển bằng giải quốc gia, bạn vui lòng theo dõi thông báo chính thức trên website của trường hoặc liên hệ phòng tuyển sinh để được cập nhật thông tin mới nhất."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "1",
+    "original_dialog_id": 14
+  },
+  {
+    "dialog_id": "15_1",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Cho e hỏi là , làm hồ sơ xét tuyển đgnl nộp cho trường mình như thế nào ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, trong tháng 5 trường sẽ mở cổng xét tuyển và có hướng dẫn nộp hồ sơ, bạn chờ thông tin từ trường nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "0",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "15_2",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hiện tại trường chưa mở cổng đúng ko ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Hiện tại cổng xét tuyển chưa mở bạn nhé"
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "15_3",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Cổng tuyển sinh trường mik mở ch ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, cổng xét tuyển dành cho các phương thức: xét tuyển thẳng, ưu tiên xét tuyển, xét tuyển bằng điểm thi ĐGNL hoặc sử dụng các chứng chỉ quốc tế (SAT, ACT, A-level) đã được mở. Bạn truy cập vào cổng đăng ký tại: https://tuyensinh.uet.vnu.edu.vn/qlts/login. Hướng dẫn đăng ký chi tiết tại: https://bit.ly/HDDKXT_UET_2024. Ngoài ra, bạn có thể tham khảo về thông tin xét tuyển chi tiết tại đây: https://bit.ly/ThongBaoXetTuyen"
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Khi nào",
+    "reasoning_level": "0",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "15_4",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "H e muốn đăng kí xét tuyển đgnl thì e cần làm gì ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Bạn đăng ký tài khoản và điền các thông tin cũng như tải các minh chứng theo yêu cầu vào trang đăng ký xét tuyển này của trường nhé. Thời gian nộp hồ sơ: Từ ngày 08/05/2024 đến hết ngày 10/06/2024 (Online)."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "0",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "15_5",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Mấy cái file ý ạ. Ko chuyển về PDF đc ạ. Toàn có JPG thôi ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Bạn nên chuyển về định dạng file pdf bạn nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "15_6",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "E chụp ảnh xong nó không lưu thành pdf đc ạ. Em muốn lấy file điểm đgnl thì lấy ở đâu ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Nếu bạn xét tuyển sử dụng kết quả bài thi ĐGNL (HSA) của ĐHQGHN bạn cần chụp ảnh hoặc scan chứng chỉ vào 1 file định dạng *.pdf hoặc *.doc hoặc *.docx (chụp và chuyển định dạng file riêng rồi mới tải lên); còn đối với ảnh thí sinh, ảnh cccd, minh chứng chuyển khoản thì bạn để định dạng jpg như bình thường nhé.. Bạn có thể dùng các công cụ chuyển đổi từ ảnh sang pdf, docx,... hoặc các ứng dụng scan hình ảnh để lưu được thành các file đúng định dạng của hệ thống nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "1",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "15_7",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "cái nội dung chuyển khoán ý ạ. số cmtnd là gì ạ. xxt ĐH là gì ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Số CMTND đấy bạn nhập số CCCD nhé, còn XTT ĐH 2024 là cú pháp bạn cần nhập."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "0",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "15_8",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Nộp hồ sơ rồi thì bao lâu có kết quả ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Hiện tại trường chưa công bố thời gian có kết quả nhé. Bạn đợi sau khi đóng cổng sẽ có thông tin sau."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Khi nào",
+    "reasoning_level": "0",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "15_9",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Có cần scan học bạ ko ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào em, em đăng kí xét tuyển bằng ĐGNL thì chỉ cần scan phiếu báo điểm ĐGNL thôi nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "15_10",
+    "topic": "XT kết hợp",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Nếu mà đăng kí xét tuyển thế này. Thì có ảnh hưởng gì đến việc đăng kí nguyện vọng bằng điểm tốt nghiệp ko ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, đây là phương thức xét tuyển riêng của trường, sẽ không ảnh hưởng đến việc đăng ký nguyện vọng trên cổng Bộ nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "15_11",
+    "topic": "XT kết hợp",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Giả sử nếu e xét tuyển bằng hình thức này đỗ r thì e có đc xét tuyển những trường khác bằng điểm thi tốt nghiệp đc ko ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Hoàn toàn được bạn nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "15_12",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Xét tuyển đgnl chỉ cần scan trên cổng thôi ạ. Ko cần p nộp qua bưu điện đúng ko ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "đúng rồi em nhé mình chỉ cần hoàn thiện hồ sơ trên cổng đăng kí thôi"
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "15_13",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lúc mik làm hồ sơ xét tuyển đgnl ý ạ Ghi trường thì mik gõ tên trường. Hay là nhập mã trường ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, bạn ghi tên trường nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "0",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "15_14",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Bao h trường mình công bố kết quả xét tuyển đánh giá năng lực vậy ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, hiện trường chưa có thời gian công bố kết quả cụ thể, bạn chờ thông tin trong thời gian tới nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Khi nào",
+    "reasoning_level": "0",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "15_15",
+    "topic": "Thông tin nhập học",
+    "messages": [
+      {
+        "role": "user",
+        "content": "E đã đỗ khoa vật lí kĩ thuật của trường và đã là k69 của trường, thì ko bt là e sẽ đc học tập tại cơ sở nào ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Ngành CN3 sinh viên học tại Hoà Lạc trong năm nhất, từ năm 2 học tại Xuân Thuỷ nhé!"
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Ở đâu",
+    "reasoning_level": "0",
+    "original_dialog_id": 15
+  },
+  {
+    "dialog_id": "16_1",
+    "topic": "Chương trình học",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ad ơi, cho mình tham khảo ctdt cn9 có dc k ạ 🥰🥰"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, bạn tham khảo chương trình đào tạo của ngành Công nghệ kỹ thuật điện tử - viễn thông (CN9) tại đây nhé: https://uet.vnu.edu.vn/chuong-trinh-dao-tao-nganh-cong-nghe-ky-thuat-dien-tu-vien-thong-3/"
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "0",
+    "original_dialog_id": 16
+  },
+  {
+    "dialog_id": "16_2",
+    "topic": "Chương trình học",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Áp dụng cho khoá năm nay đúng ko ạ 😍😍"
+      },
+      {
+        "role": "assistant",
+        "content": "Đúng rồi bạn nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 16
+  },
+  {
+    "dialog_id": "16_3",
+    "topic": "Chương trình học",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chuyên ngành thì mình tự chọn hay là phân theo gpa ạ. Cả chuyên ngành của cn7- công nghệ hàng ko vũ trụ đúng ko ạ 👉🏻👈🏻. Em dự định vào cn7 chọn cn cntt điện tử hàng ko nếu k vào dc cn9 🥹🥹"
+      },
+      {
+        "role": "assistant",
+        "content": "Bạn có thể tự lựa chọn chuyên ngành mình mong muốn trong chương trình đào tạo của ngành học nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "1",
+    "original_dialog_id": 16
+  },
+  {
+    "dialog_id": "16_4",
+    "topic": "XT THPT QG",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ad ơi, em có chứng chỉ aptis esol b2, làm sao để quy đổi ạ? Ad ơi, em có chứng chỉ aptis esol b2, làm sao để quy đổi ạ? Dạ ý em là làm sao để quy đổi ý ạ? Em phải nộp chứng chỉ cho nhà trường khi nào để nhà trường lấy dữ liệu để xét tuyển. Ad trả lời dùm em đi ạ 🥲🥲 Nhưng mà giờ có kịp thêm vào nữa ko ad 🥲🥲🥲🥲. Tại hết m10 là ko dc đăng ký thi thpt quốc gia r. Đăng ký như này đúng chưa ạ?. Ý em là quy đổi điểm tiếng Anh thpt này ý ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, để quy đổi điểm chứng chỉ Aptis ESOL B2, bạn cần thực hiện đăng ký miễn thi THPTQG môn Tiếng Anh bằng chứng chỉ này trên hệ thống của Bộ. Việc quy đổi điểm sẽ được thực hiện dựa trên thông tin bạn đăng ký. Nếu bạn không đăng ký miễn thi, nhà trường sẽ sử dụng điểm thi THPTQG của bạn. Về thời gian đăng ký, bạn vui lòng liên hệ thầy cô tại trường bạn đang theo học để được hỗ trợ kịp thời, vì việc đăng ký trên hệ thống của Bộ có thể có giới hạn về thời gian. Sau khi đăng ký, bạn chỉ cần ghi điểm thi là được nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "2",
+    "original_dialog_id": 16
+  },
+  {
+    "dialog_id": "16_5",
+    "topic": "XT THPT QG",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Dạ 163 ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Dựa trên tổng điểm 163, nhà trường sẽ xem xét quy đổi điểm cho chứng chỉ Aptis ESOL B2 của bạn."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Bao nhiêu",
+    "reasoning_level": "0",
+    "original_dialog_id": 16
+  },
+  {
+    "dialog_id": "16_6",
+    "topic": "XT THPT QG",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Dạ k ạ. Phải đăng ký mới dc quy đổi ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Đúng vậy, bạn phải đăng ký miễn thi THPTQG môn Tiếng Anh bằng chứng chỉ này thì nhà trường mới tiến hành quy đổi điểm cho bạn. Nếu không đăng ký, điểm thi THPTQG sẽ được sử dụng."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "1",
+    "original_dialog_id": 16
+  },
+  {
+    "dialog_id": "16_7",
+    "topic": "XT THPT QG",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chỉ cần ghi 164/200 đúng thôi ạ có cần ghi thêm B2 ko ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Bạn chỉ cần ghi điểm thi là được nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "0",
+    "original_dialog_id": 16
+  },
+  {
+    "dialog_id": "17_1",
+    "topic": "XT kết hợp",
+    "messages": [
+      {
+        "role": "user",
+        "content": "E có đăng kí xét tuyển kết hợp qua hệ thống của trường và đã trúng tuyển ngành hệ thống thông tin. Thì e muốn hỏi là e phải nộp thêm những gì nữa để đảm bảo ạ"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, hiện tại bạn không cần nộp gì thêm nhé. Bạn chỉ cần đăng kí nguyện vọng trên cổng đăng kí của bộ và hoàn thành phí nguyện vọng là được."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "0",
+    "original_dialog_id": 17
+  },
+  {
+    "dialog_id": "26_1",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chào ad, cho em hỏi về xét tuyển thẳng bên mình ạ. Cụ thể là trường có xét giải quốc gia Vật Lý cho ngành CN1 không ạ, và giải ba có được không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, phương thức xét tuyển thẳng sẽ dành cho các thí sinh có giải Olympic quốc tế, giải Nhất, nhì, ba kỳ thi HSG Quốc gia và kỳ thi KHKT cấp Quốc gia. Trường có xét giải quốc gia Vật Lý đối với ngành CN1 nhé. Nếu bạn được từ giải Ba đổ lên thì sẽ thuộc nhóm đối tượng 1 được tuyển thẳng."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "2",
+    "original_dialog_id": 26
+  },
+  {
+    "dialog_id": "32_1",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Cho tôi hỏi trường mở xét tuyển ưu tiên xét tuyển chưa và hồ sơ xét tuyển gồm những gì ạ? Trường có mở xét tuyển đại học chưa?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, cổng xét tuyển sẽ sớm được mở trong thời gian tới. Bạn theo dõi page để nhận thông tin tuyển sinh mới nhất từ nhà trường nhé. Hiện tại, nhà trường chưa có thông tin chi tiết về hồ sơ xét tuyển, bạn vui lòng theo dõi fanpage để cập nhật nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "1",
+    "original_dialog_id": 32
+  },
+  {
+    "dialog_id": "36_1",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chào bạn, cho mình hỏi về phương thức xét tuyển năm 2024 của trường mình nhé. Cụ thể là nếu có giải Olympic Tin học châu Á - Thái Bình Dương thì có được xét tuyển thẳng không và cách thức đăng ký như thế nào?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, nếu bạn tham gia đội tuyển Olympic Tin học châu Á – Thái Bình Dương và đạt giải quốc gia thì bạn sẽ thuộc đối tượng xét tuyển thẳng của trường. Bạn có thể đăng ký xét tuyển thẳng trên cổng xét tuyển của trường, thông tin chi tiết sẽ được công bố vào cuối tháng này khi có đề án tuyển sinh. Bạn nhớ theo dõi Page để cập nhật thông tin sớm nhất nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "2",
+    "original_dialog_id": 36
+  },
+  {
+    "dialog_id": "37_1",
+    "topic": "XT khác",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Trường mình có tuyển sinh bằng kỳ thi lập trình do trường tổ chức không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Hiện tại, nhà trường chưa có thông tin chính thức nào về việc tuyển sinh bằng kỳ thi lập trình do trường tổ chức bạn nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 37
+  },
+  {
+    "dialog_id": "40_1",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Thế nào là ưu tiên xét tuyển vào ĐH công nghệ - ĐHQGHN và tiêu chí cụ thể là gì?"
+      },
+      {
+        "role": "assistant",
+        "content": "Phương thức ưu tiên xét tuyển tại ĐH Công nghệ - ĐHQGHN dành cho các thí sinh đạt giải Nhất, Nhì, Ba trong các kỳ thi Học sinh Giỏi cấp tỉnh/thành phố. Để biết chi tiết hơn về phương thức này trong đề án tuyển sinh năm 2023, bạn vui lòng tham khảo thêm thông tin trong đề án."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "1",
+    "original_dialog_id": 40
+  },
+  {
+    "dialog_id": "41_1",
+    "topic": "Thông tin tuyển sinh khác",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Trường mình đã có đề án tuyển sinh năm 2024 chưa và ngành thiết kế mỹ thuật dự định đào tạo sinh viên tại Xuân Thủy hay cơ sở Hòa Lạc?"
+      },
+      {
+        "role": "assistant",
+        "content": "Hiện tại trường chưa công bố đề án tuyển sinh 2024. Ngành thiết kế công nghiệp và đồ họa sẽ được học tại Xuân Thủy bạn nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "2",
+    "original_dialog_id": 41
+  },
+  {
+    "dialog_id": "42_1",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Nếu e muốn học song bằng kỹ thuật máy tính và kỹ thuật điện tử có được không ạ? E muốn học sâu về vi mạch và bán dẫn ah. Và nếu được thì điều kiện là gì ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, trường hiện chưa đào tạo hệ song bằng nhé. Do đó, bạn không thể học song bằng Kỹ thuật Máy tính và Kỹ thuật Điện tử tại trường."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 42
+  },
+  {
+    "dialog_id": "42_2",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Việc ghi nội dung như trên vào hồ sơ có bị loại không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, bạn giữ lại bản ghi đó làm minh chứng là được nhé, không sao đâu."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 42
+  },
+  {
+    "dialog_id": "42_3",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ad ơi, hôm trước em có điền SBD trên web rồi mà ở đây (hệ thống/trang web) chưa hiện thì em có cần làm gì không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, nếu bạn đã cập nhật thông tin SBD rồi thì không cần lo lắng, hệ thống có thể cần một chút thời gian để cập nhật. Bạn cứ giữ nguyên thông tin đã điền nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 42
+  },
+  {
+    "dialog_id": "42_4",
+    "topic": "Chương trình học",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Trường mình có đào tạo hệ song bằng không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, hiện tại trường chưa có kế hoạch đào tạo hệ song bằng nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 42
+  }
+]

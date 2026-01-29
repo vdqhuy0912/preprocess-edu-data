@@ -1,0 +1,325 @@
+[
+  {
+    "dialog_id": "1_1",
+    "topic": "XT khác",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Em muốn xét tuyển vào ngành Kỹ thuật điều khiển và Tự động hóa của trường Đại học Công nghệ. Trường có chấp nhận hình thức xét tuyển bằng học bạ THPT không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, trường Đại học Công nghệ không có phương thức xét tuyển bằng học bạ THPT."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 1
+  },
+  {
+    "dialog_id": "1_2",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Trường Đại học Công nghệ có các phương thức xét tuyển đặc biệt nào dành cho học sinh có thành tích cao trong học tập hoặc thi học sinh giỏi không? Cụ thể, nếu em có một số giải thưởng cấp tỉnh và điểm trung bình THPT khá tốt, liệu có cơ hội được ưu tiên xét tuyển vào ngành Kỹ thuật điều khiển và Tự động hóa không, và em có cần nộp thư giới thiệu để tăng khả năng trúng tuyển không?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, trường Đại học Công nghệ có áp dụng phương thức ưu tiên xét tuyển dành cho các thí sinh đạt thành tích cao trong các kỳ thi học sinh giỏi cấp tỉnh/thành phố.Nếu bạn đạt giải Nhất hoặc giải Nhì cấp tỉnh: Bạn sẽ có lợi thế rất lớn khi xét tuyển vào ngành Kỹ thuật điều khiển và Tự động hóa, miễn là bạn đáp ứng đủ các điều kiện về học lực (điểm trung bình học tập THPT từ 8.5 trở lên, học lực Giỏi và hạnh kiểm Tốt trong 3 năm).Nếu bạn đạt giải Ba hoặc giải Khuyến khích cấp tỉnh: Cơ hội trúng tuyển vẫn có, nhưng bạn cần đảm bảo điểm thi THPT Quốc gia vượt qua điểm sàn của ngành và các tiêu chí học lực khác. Nhà trường sẽ xét tuyển theo thứ tự ưu tiên của giải thưởng từ cao xuống thấp.Về thư giới thiệu: Hiện tại, phương thức ưu tiên xét tuyển của trường không yêu cầu thư giới thiệu. Do đó, việc có hay không thư giới thiệu sẽ không ảnh hưởng đến quá trình xét tuyển theo phương thức này."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": true,
+    "question_type": "Có/Không",
+    "reasoning_level": "1",
+    "original_dialog_id": 1
+  },
+  {
+    "dialog_id": "1_3",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Em đã hoàn tất việc đăng ký nguyện vọng xét tuyển vào trường Đại học Công nghệ, nhưng vẫn chưa thấy phần nộp lệ phí xét tuyển trên hệ thống. Vậy cho em hỏi quy trình nộp lệ phí xét tuyển là như thế nào và khi nào thì em có thể thực hiện thanh toán ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn,Về việc chưa thấy phần nộp lệ phí: Hiện tại, cổng đăng ký xét tuyển của trường Đại học Công nghệ chưa chính thức mở để thí sinh có thể nộp lệ phí. Mặc dù bạn đã hoàn tất việc đăng ký nguyện vọng, nhưng hệ thống thanh toán chỉ được kích hoạt trong khoảng thời gian cụ thể khi trường mở cổng nộp hồ sơ và lệ phí.Về quy trình nộp lệ phí: Khi đến thời điểm mở cổng, bạn sẽ nhận được thông báo chi tiết về các phương thức thanh toán lệ phí xét tuyển, thường bao gồm chuyển khoản ngân hàng, thanh toán trực tuyến qua các ví điện tử hoặc cổng thanh toán của trường. Tất cả thông tin và hướng dẫn cụ thể sẽ được cập nhật trên website tuyển sinh chính thức của trường.Thời gian nộp lệ phí: Bạn vui lòng theo dõi các thông báo trên trang tuyển sinh của trường để nắm rõ lịch trình cụ thể về thời gian mở cổng nộp lệ phí xét tuyển, thường sẽ được công bố cùng với lịch trình tuyển sinh chung."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "2",
+    "original_dialog_id": 1
+  },
+  {
+    "dialog_id": "2_1",
+    "topic": "Chương trình học",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Cho em hỏi, liệu có những ngành học mới nào của trường Đại học Công nghệ, ĐHQGHN yêu cầu sinh viên phải chuyển địa điểm học sang nơi khác trong 2 năm đầu tiên không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, thông tin chi tiết về việc các ngành học mới có yêu cầu chuyển địa điểm học trong 2 năm đầu hay không sẽ được cập nhật trên website tuyển sinh chính thức của trường. Bạn vui lòng theo dõi các thông báo mới nhất để có thông tin chính xác nhất nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 2
+  },
+  {
+    "dialog_id": "2_2",
+    "topic": "XT THPT QG",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chào ad, khi đã đủ điểm đậu vào trường ĐHCN, ĐHQGHN thì em có cần phải đáp ứng thêm bất kỳ tiêu chí phụ nào khác nữa hay không để được nhập học chính thức?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, nếu bạn xét tuyển bằng điểm thi THPT Quốc gia thì không cần thêm bất kỳ tiêu chí phụ nào khác. Tuy nhiên, đối với một số phương thức xét tuyển khác như xét tuyển kết hợp hoặc xét tuyển thẳng, có thể sẽ có các yêu cầu bổ sung về hồ sơ hoặc phỏng vấn. Bạn nên kiểm tra kỹ phương thức xét tuyển mà mình đã đăng ký để nắm rõ các tiêu chí cần thiết nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": true,
+    "question_type": "Có/Không",
+    "reasoning_level": "1",
+    "original_dialog_id": 2
+  },
+  {
+    "dialog_id": "2_3",
+    "topic": "Thông tin tuyển sinh khác",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chào anh/chị, em muốn hỏi mã trường của Đại học Công nghệ, ĐHQGHN là gì ạ? Đồng thời, em có thể tìm danh sách đầy đủ các mã ngành tuyển sinh của trường ở đâu để tiện tham khảo không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, về mã trường của Đại học Công nghệ, ĐHQGHN, bạn có thể sử dụng mã QHI khi đăng ký xét tuyển. Đối với mã ngành, mỗi ngành học sẽ có một mã riêng biệt. Bạn có thể tra cứu toàn bộ danh sách mã ngành tuyển sinh chi tiết cùng với các thông tin liên quan khác như chỉ tiêu, tổ hợp môn xét tuyển trên cổng thông tin tuyển sinh chính thức của trường tại địa chỉ [địa chỉ website tuyển sinh]. Bạn vui lòng truy cập và tham khảo để chọn đúng mã ngành mình mong muốn nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "2",
+    "original_dialog_id": 2
+  },
+  {
+    "dialog_id": "2_4",
+    "topic": "Chương trình học",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chào anh/chị, cho em hỏi quy trình thi đầu vào của trường Đại học Công nghệ, ĐHQGHN diễn ra như thế nào ạ, có bao gồm các môn kiểm tra năng lực hay thi tiếng Anh không?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, trường Đại học Công nghệ, ĐHQGHN hiện tại không tổ chức kiểm tra tiếng Anh đầu vào cho sinh viên. Việc xét tuyển chủ yếu dựa trên kết quả thi THPT Quốc gia hoặc các phương thức xét tuyển khác theo quy định của Bộ Giáo dục và Đào tạo và ĐHQGHN. Tuy nhiên, trong quá trình học, sinh viên sẽ cần đạt chuẩn đầu ra tiếng Anh theo quy định của trường để tốt nghiệp."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": true,
+    "question_type": "Như thế nào",
+    "reasoning_level": "1",
+    "original_dialog_id": 2
+  },
+  {
+    "dialog_id": "2_5",
+    "topic": "Thông tin nhập học",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Trường Đại học Công nghệ, ĐHQGHN dự kiến bao giờ sẽ tổ chức nhập học cho tân sinh viên năm nay ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, thông tin chi tiết về thời gian nhập học chính thức cho tân sinh viên sẽ được trường Đại học Công nghệ, ĐHQGHN thông báo cụ thể trên website tuyển sinh và các kênh truyền thông chính thức trong thời gian sắp tới. Bạn vui lòng thường xuyên kiểm tra các kênh thông báo của trường để không bỏ lỡ thông tin quan trọng nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Khi nào",
+    "reasoning_level": "0",
+    "original_dialog_id": 2
+  },
+  {
+    "dialog_id": "2_6",
+    "topic": "Thông tin nhập học",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Chào ad, cho em xác nhận lại là ngày 24 tháng 8 là thời điểm tất cả sinh viên nhập học tại trường Đại học Công nghệ, ĐHQGHN phải không ạ? Và khi đi nhập học thì em cần chuẩn bị những loại giấy tờ gì?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, về thời gian nhập học và các giấy tờ cần thiết, trường Đại học Công nghệ, ĐHQGHN đã có hướng dẫn chi tiết trên website tuyển sinh chính thức. Cụ thể, bạn có thể tham khảo tại đường dẫn sau: \"https://tuyensinh.uet.vnu.edu.vn/tin-tuyen-sinh/huong-dan-xac-nhan-nhap-hoc-va-nhap-hoc-dai-hoc-chinh-quy-nam-2024/\". Trang này sẽ cung cấp đầy đủ thông tin về lịch trình nhập học cụ thể (bao gồm cả việc xác nhận ngày 24/8 có phải là ngày chung hay không) và danh mục các hồ sơ, giấy tờ mà bạn cần chuẩn bị để hoàn tất thủ tục nhập học."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "2",
+    "original_dialog_id": 2
+  },
+  {
+    "dialog_id": "2_7",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Em là sinh viên ở tỉnh lẻ, muốn hỏi về việc làm giấy chuyển nghĩa vụ quân sự. Để làm thủ tục này, em có cần giấy báo trúng tuyển không và trường Đại học Công nghệ, ĐHQGHN có gửi giấy báo trúng tuyển qua email cho sinh viên không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, để làm thủ tục chuyển nghĩa vụ quân sự, bạn sẽ cần có giấy báo trúng tuyển của trường. Thông thường, trường Đại học Công nghệ, ĐHQGHN sẽ gửi giấy báo trúng tuyển đến địa chỉ đã đăng ký của thí sinh qua đường bưu điện hoặc có thể cung cấp bản điện tử qua email hoặc cổng thông tin sinh viên tùy theo quy định từng năm. Bạn nên liên hệ trực tiếp với Phòng Đào tạo hoặc Phòng Công tác Học sinh Sinh viên của trường để được hướng dẫn chi tiết về cách thức nhận giấy báo trúng tuyển và các thủ tục liên quan đến nghĩa vụ quân sự nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "1",
+    "original_dialog_id": 2
+  },
+  {
+    "dialog_id": "3_1",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Nếu em muốn đăng ký xét tuyển thẳng hoặc ưu tiên xét tuyển vào trường Đại học Công nghệ, Đại học Quốc gia Hà Nội, em chỉ cần điền thông tin theo hướng dẫn và nếu đăng ký nhiều nguyện vọng nhưng chỉ sử dụng một phương thức là \"đối tượng 1,2,3,4\" thì mức phí có phải là 30.000 VNĐ cho tất cả các nguyện vọng đó không?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, về quy trình đăng ký xét tuyển thẳng và ưu tiên xét tuyển tại trường Đại học Công nghệ, Đại học Quốc gia Hà Nội, bạn chỉ cần điền đầy đủ thông tin theo hướng dẫn trên hệ thống là đã hoàn tất phần hồ sơ. Đối với câu hỏi về lệ phí, nếu bạn đăng ký nhiều nguyện vọng nhưng chỉ sử dụng một phương thức xét tuyển duy nhất, ví dụ như \"đối tượng 1,2,3,4\", thì lệ phí đăng ký sẽ là 30.000 VNĐ cho tất cả các nguyện vọng đó. Tóm lại, quy trình đăng ký và mức phí bạn nêu là chính xác theo quy định hiện hành của Nhà trường."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "2",
+    "original_dialog_id": 3
+  },
+  {
+    "dialog_id": "3_2",
+    "topic": "XTT & ƯTXT",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Em có giải Olympic Khoa học Tự nhiên và muốn sử dụng để xét tuyển thẳng vào trường. Tuy nhiên, em nghe thông tin rằng trường đã bỏ xét giải này. Vậy, liệu giải Olympic Khoa học Tự nhiên của Đại học Quốc gia Hà Nội có còn được xem xét trong quy chế tuyển sinh thẳng của trường không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, về việc xét tuyển thẳng bằng giải Olympic Khoa học Tự nhiên của Đại học Quốc gia Hà Nội, nhà trường hiện tại vẫn đang trong quá trình cân nhắc và cập nhật quy định. Do đó, bạn vẫn nên nộp hồ sơ xét tuyển với thành tích này. Nếu bạn đạt giải và có đủ các điều kiện khác theo quy chế tuyển sinh của Đại học Quốc gia Hà Nội, hồ sơ của bạn sẽ được xem xét. Tuy nhiên, bạn cần theo dõi thông báo chính thức từ trường để có thông tin cập nhật và chính xác nhất về các tiêu chí tuyển thẳng cuối cùng, phòng trường hợp có thay đổi."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": true,
+    "question_type": "Có/Không",
+    "reasoning_level": "1",
+    "original_dialog_id": 3
+  },
+  {
+    "dialog_id": "3_3",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Em thấy thông tin về hạn cuối đăng ký xét tuyển chung của các trường trong khối Đại học Quốc gia Hà Nội, nhưng em lại tưởng hạn cuối đăng ký xét tuyển vào Đại học Công nghệ là ngày 10/6. Vậy thông tin nào là chính xác? Và nếu em đã hoàn thành đăng ký nguyện vọng trên trang đăng ký của Đại học Công nghệ rồi thì có cần phải làm thêm thủ tục gì với Đại học Quốc gia Hà Nội nữa không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, về thông tin hạn cuối đăng ký xét tuyển, lịch bạn thấy là lịch chung áp dụng cho các trường thành viên trong khối Đại học Quốc gia Hà Nội. Hạn 10/6 mà bạn nhắc đến có thể là một mốc thời gian cụ thể cho một phương thức hoặc giai đoạn riêng của Đại học Công nghệ, hoặc là thông tin cũ. Tuy nhiên, thông tin chính xác và cập nhật nhất về hạn cuối đăng ký xét tuyển sẽ được công bố trên cổng thông tin tuyển sinh chính thức của Đại học Quốc gia Hà Nội và từng trường thành viên. Về việc đăng ký nguyện vọng, nếu bạn đã hoàn thành việc đăng ký hồ sơ trên hệ thống website của trường Đại học Công nghệ (UET) thì bạn không cần phải thực hiện thêm bất kỳ thao tác nào khác với Đại học Quốc gia Hà Nội (VNU) nữa. Hồ sơ của bạn đã được ghi nhận trực tiếp qua cổng của trường thành viên. Bạn chỉ cần theo dõi thông báo tiếp theo từ trường."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Cái gì",
+    "reasoning_level": "2",
+    "original_dialog_id": 3
+  },
+  {
+    "dialog_id": "4_1",
+    "topic": "Chương trình học",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Trường Đại học Công nghệ (UET) có yêu cầu chứng chỉ ngoại ngữ đầu ra không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, về yêu cầu chứng chỉ ngoại ngữ đầu ra của Trường Đại học Công nghệ (UET) thì còn tùy thuộc vào từng ngành học cụ thể. Tuy nhiên, nếu bạn đang hỏi về chứng chỉ TOEIC thì trường không yêu cầu TOEIC làm chứng chỉ đầu ra nhé. Bạn vui lòng cung cấp thêm thông tin về ngành bạn quan tâm để được tư vấn chính xác hơn."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": true,
+    "question_type": "Có/Không",
+    "reasoning_level": "1",
+    "original_dialog_id": 4
+  },
+  {
+    "dialog_id": "4_2",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Em muốn hỏi về hồ sơ nhập học, có thể nộp học bạ THPT bản sao công chứng được không, hay bắt buộc phải là bản chính ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Về việc nộp học bạ THPT, bạn chỉ cần nộp bản sao có công chứng nhé."
+      }
+    ],
+    "multi_intent": false,
+    "insufficient_context": false,
+    "question_type": "Có/Không",
+    "reasoning_level": "0",
+    "original_dialog_id": 4
+  },
+  {
+    "dialog_id": "4_3",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Em có một thắc mắc liên quan đến việc xin giấy chuyển nghĩa vụ quân sự. Em được biết cần có giấy báo nhập học mới xin chuyển được, nhưng lịch nhập học của Trường Đại học Công nghệ là ngày 24/8 mới nhận được giấy báo. Trong khi đó, em cần hoàn thành thủ tục chuyển nghĩa vụ quân sự sớm. Vậy em phải làm thế nào để giải quyết vấn đề này, có cách nào để nhận giấy báo trúng tuyển sớm hơn hoặc nộp bổ sung hồ sơ nghĩa vụ quân sự sau không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chào bạn, về vấn đề giấy báo nhập học và nghĩa vụ quân sự, bạn có thể thực hiện theo các bước sau: 1. Về việc nhập học và nhận giấy trúng tuyển: Bạn cứ đến trường nhập học theo lịch vào ngày 24/8 và nhận giấy trúng tuyển tại đó. 2. Về thủ tục nghĩa vụ quân sự: Đối với giấy tờ nghĩa vụ quân sự, bạn không cần phải hoàn thành ngay lập tức. Bạn có thể bổ sung hồ sơ này sau. 3. Thời hạn bổ sung hồ sơ: Sinh viên có thể nộp các giấy tờ còn thiếu, bao gồm giấy chuyển nghĩa vụ quân sự, tại Phòng Công tác Sinh viên (P104-E3) trước ngày 10/09/2024 trong giờ hành chính. 4. Giải pháp nhận giấy trúng tuyển sớm: Nếu bạn muốn có giấy báo trúng tuyển sớm hơn để thuận tiện cho việc giải quyết nghĩa vụ quân sự, bạn có thể đến trường nhận trước từ ngày 19 đến 23/8. Tóm lại, bạn có hai lựa chọn: hoặc nhận giấy báo trúng tuyển sớm từ 19-23/8 để làm thủ tục NVQS, hoặc cứ nhập học bình thường vào 24/8 và bổ sung giấy tờ NVQS sau ngày 10/09/2024."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": false,
+    "question_type": "Như thế nào",
+    "reasoning_level": "2",
+    "original_dialog_id": 4
+  },
+  {
+    "dialog_id": "5_1",
+    "topic": "Hồ sơ và quy trình",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Em muốn hỏi về thời gian nộp hồ sơ tuyển thẳng và liệu có yêu cầu gì đặc biệt về giấy tờ hay quy trình nộp không ạ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Về thời gian nộp hồ sơ tuyển thẳng, hiện tại trường chưa có thông báo mốc thời gian cụ thể. Bạn vui lòng theo dõi thông tin chi tiết trong Đề án tuyển sinh sắp tới của trường. Còn về các yêu cầu đặc biệt về giấy tờ hoặc quy trình nộp hồ sơ, điều này thường phụ thuộc vào từng diện tuyển thẳng (ví dụ: tuyển thẳng theo giải học sinh giỏi quốc gia, theo chứng chỉ quốc tế, hoặc theo quy định riêng của Bộ GD&ĐT). Do đó, bạn cần tham khảo kỹ đề án tuyển sinh để biết chính xác các giấy tờ cần thiết và quy trình cụ thể áp dụng cho diện tuyển thẳng của mình nhé."
+      }
+    ],
+    "multi_intent": true,
+    "insufficient_context": true,
+    "question_type": "Cái gì",
+    "reasoning_level": "2",
+    "original_dialog_id": 5
+  }
+]
