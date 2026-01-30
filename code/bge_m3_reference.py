@@ -1,12 +1,10 @@
 """
-Hybrid Reference Assignment Script (PA2)
+BGE-M3 Reference Assignment Script
 
-Assigns document chunk references to Q&A pairs using Reranker-based hybrid scoring:
-Formula: final_score = 0.6 * Sigmoid(Reranker(A, C)) + 0.2 * Sigmoid(Reranker(Q, C)) + 0.2 * BM25_score
+Assigns document chunk references to Q&A pairs using hybrid scoring:
+Formula: final_score = 0.6 * cosine_sim(A, C) + 0.2 * cosine_sim(Q, C) + 0.2 * bm25_score
 
-Models:
-- Reranker: BAAI/bge-reranker-base
-- BM25: rank_bm25
+Model: BAAI/bge-m3 (Bi-Encoder)
 """
 
 import json
@@ -17,38 +15,41 @@ from typing import List, Dict, Any, Tuple
 import numpy as np
 from tqdm import tqdm
 import torch
+import sys
 
-# Using transformers for Reranker
-from transformers import AutoModelForSequenceClassification, AutoTokenizer
+# Using sentence-transformers for BGE-M3
+from sentence_transformers import SentenceTransformer
 
 # BM25
 from rank_bm25 import BM25Okapi
 import re
 
+def setup_encoding():
+    """Ensure utf-8 encoding for standard output on Windows."""
+    if sys.stdout.encoding != 'utf-8':
+        try:
+            import io
+            sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+        except:
+            pass
 
 def load_reference_chunks(reference_dir: str) -> List[Dict[str, Any]]:
     """Load all chunks from reference JSON files."""
     chunks = []
     reference_path = Path(reference_dir)
     
-    import sys
-    if sys.stdout.encoding != 'utf-8':
-        try:
-            sys.stdout.reconfigure(encoding='utf-8')
-        except AttributeError:
-            # Fallback for older python
-            pass
-
     for json_file in reference_path.glob("*.json"):
-        # Skip docx files and other non-json
         if not json_file.name.endswith('.json'):
             continue
             
         print(f"Loading: {json_file.name}")
         with open(json_file, 'r', encoding='utf-8') as f:
-            data = json.load(f)
+            try:
+                data = json.load(f)
+            except json.JSONDecodeError:
+                print(f"Error loading {json_file.name}, skipping.")
+                continue
         
-        # Handle different JSON structures
         if 'chunks' in data:
             for chunk in data['chunks']:
                 content = chunk.get('content', '')
@@ -93,14 +94,12 @@ def load_reference_chunks(reference_dir: str) -> List[Dict[str, Any]]:
     print(f"Total chunks loaded: {len(chunks)}")
     return chunks
 
-
 def tokenize_for_bm25(text: str) -> List[str]:
     text = text.lower()
     tokens = re.findall(r'\b\w+\b', text, re.UNICODE)
     return tokens
 
-
-def normalize_scores(scores: np.ndarray) -> np.ndarray:
+def normalize_bm25_scores(scores: np.ndarray) -> np.ndarray:
     if len(scores) == 0:
         return scores
     min_val = np.min(scores)
@@ -109,45 +108,25 @@ def normalize_scores(scores: np.ndarray) -> np.ndarray:
         return np.zeros_like(scores)
     return (scores - min_val) / (max_val - min_val)
 
-
-class BGEReranker:
-    def __init__(self, model_name: str, device: str = None):
-        if device is None:
-            self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        else:
-            self.device = device
-            
-        print(f"Loading reranker model {model_name} on {self.device}...")
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
-        self.model.to(self.device)
-        self.model.eval()
-
-    def score_pairs(self, pairs: List[Tuple[str, str]], batch_size: int = 32) -> np.ndarray:
-        all_logits = []
-        with torch.no_grad():
-            for i in range(0, len(pairs), batch_size):
-                batch = pairs[i:i+batch_size]
-                inputs = self.tokenizer(batch, padding=True, truncation=True, return_tensors='pt', max_length=512)
-                inputs = {k: v.to(self.device) for k, v in inputs.items()}
-                logits = self.model(**inputs).logits.view(-1).cpu().float()
-                all_logits.append(logits)
-        
-        logits_concat = torch.cat(all_logits).numpy()
-        # Sigmoid to normalize to [0, 1]
-        return 1 / (1 + np.exp(-logits_concat))
-
-
 def assign_references(
     dialogs: List[Dict[str, Any]],
     chunks: List[Dict[str, Any]],
-    reranker: BGEReranker,
+    model: SentenceTransformer,
     threshold: float = 0.5,
     top_k: int = 3
 ) -> List[Dict[str, Any]]:
     
-    print("Building BM25 index...")
+    print("Computing chunk embeddings using BGE-M3...")
     chunk_contents = [c['content'] for c in chunks]
+    # BGE-M3 handles large batches efficiently
+    chunk_embeddings = model.encode(
+        chunk_contents, 
+        normalize_embeddings=True, 
+        show_progress_bar=True,
+        batch_size=16 # Adjust based on GPU memory
+    )
+    
+    print("Building BM25 index...")
     tokenized_chunks = [tokenize_for_bm25(c) for c in chunk_contents]
     bm25_index = BM25Okapi(tokenized_chunks)
     
@@ -156,7 +135,6 @@ def assign_references(
     for dialog in tqdm(dialogs, desc="Processing dialogs"):
         dialog_copy = dialog.copy()
         
-        # Extract Q and A
         messages = dialog.get('messages', [])
         question = ""
         answer = ""
@@ -171,39 +149,35 @@ def assign_references(
             results.append(dialog_copy)
             continue
             
-        # 1. BM25 score
+        # 1. Compute Question and Answer embeddings
+        q_emb = model.encode(question, normalize_embeddings=True)
+        a_emb = model.encode(answer, normalize_embeddings=True)
+        
+        # 2. Cosine similarities (dot product since normalized)
+        cosine_a_c = np.dot(chunk_embeddings, a_emb)
+        cosine_q_c = np.dot(chunk_embeddings, q_emb)
+        
+        # 3. BM25 score
         query_tokens = tokenize_for_bm25(f"{question} {answer}")
         bm25_scores = np.array(bm25_index.get_scores(query_tokens))
-        bm25_scores_norm = normalize_scores(bm25_scores)
+        bm25_scores_norm = normalize_bm25_scores(bm25_scores)
         
-        # 2. Reranker scores for (A, C) and (Q, C)
-        # To optimize, we only rerank top N candidates from BM25 if the full set is too large
-        # But here let's try with all if feasible, or pick top 100 to save time
-        candidate_indices = np.argsort(bm25_scores)[-200:] # Pick top 200 candidates to rerank
-        
-        pairs_a_c = [(answer, chunk_contents[idx]) for idx in candidate_indices]
-        pairs_q_c = [(question, chunk_contents[idx]) for idx in candidate_indices]
-        
-        scores_a_c = reranker.score_pairs(pairs_a_c)
-        scores_q_c = reranker.score_pairs(pairs_q_c)
-        
-        # Combine
-        # final_score = 0.6 * S_AC + 0.2 * S_QC + 0.2 * BM25_NORM
-        final_scores_candidates = (
-            0.6 * scores_a_c +
-            0.2 * scores_q_c +
-            0.2 * bm25_scores_norm[candidate_indices]
+        # 4. Final score formula
+        # final_score = 0.6 * cos(A,C) + 0.2 * cos(Q,C) + 0.2 * BM25
+        final_scores = (
+            0.6 * cosine_a_c +
+            0.2 * cosine_q_c +
+            0.2 * bm25_scores_norm
         )
         
-        # Sort candidates
-        sorted_cand_idx = np.argsort(final_scores_candidates)[::-1]
+        # Get top-K above threshold
+        top_indices = np.argsort(final_scores)[::-1][:top_k]
         
         references = []
-        for i in sorted_cand_idx[:top_k]:
-            score = float(final_scores_candidates[i])
+        for idx in top_indices:
+            score = float(final_scores[idx])
             if score >= threshold:
-                orig_idx = candidate_indices[i]
-                chunk = chunks[orig_idx]
+                chunk = chunks[idx]
                 references.append({
                     'source': chunk['source'],
                     'chunk_id': chunk['chunk_id'],
@@ -216,28 +190,34 @@ def assign_references(
         
     return results
 
-
 def main():
+    setup_encoding()
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', type=str, required=True)
     parser.add_argument('--output', type=str, required=True)
     parser.add_argument('--reference_dir', type=str, default='data/references')
     parser.add_argument('--threshold', type=float, default=0.5)
     parser.add_argument('--top_k', type=int, default=3)
-    parser.add_argument('--model', type=str, default='BAAI/bge-reranker-base')
+    parser.add_argument('--model', type=str, default='BAAI/bge-m3')
     
     args = parser.parse_args()
     
-    reranker = BGEReranker(args.model)
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"Using device: {device}")
+    
+    print(f"Loading model {args.model}...")
+    model = SentenceTransformer(args.model, device=device)
+    
     chunks = load_reference_chunks(args.reference_dir)
     
     with open(args.input, 'r', encoding='utf-8') as f:
         dialogs = json.load(f)
-        
+    print(f"Total dialogs: {len(dialogs)}")
+    
     results = assign_references(
         dialogs=dialogs,
         chunks=chunks,
-        reranker=reranker,
+        model=model,
         threshold=args.threshold,
         top_k=args.top_k
     )
@@ -246,7 +226,6 @@ def main():
         json.dump(results, f, ensure_ascii=False, indent=2)
     
     print(f"Done! Results saved to {args.output}")
-
 
 if __name__ == '__main__':
     main()
